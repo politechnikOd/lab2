@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: B8B8AA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.StudentMenu">
+   <children>
+      <Button layoutX="200.0" layoutY="322.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #284854;" text="Пройти тест" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font></Button>
+      <Button layoutX="408.0" layoutY="322.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: #60747C;" text="Результати" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font></Button>
+      <ChoiceBox layoutX="200.0" layoutY="140.0" prefHeight="26.0" prefWidth="220.0" style="-fx-background-radius: 20;" />
+      <Label layoutX="198.0" layoutY="99.0" text="Оберіть розділ">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font></Label>
+      <Label layoutX="205.0" layoutY="175.0" text="Оберіть тему">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font></Label>
+      <ChoiceBox layoutX="200.0" layoutY="215.0" prefHeight="26.0" prefWidth="220.0" style="-fx-background-radius: 20;" />
+      <ImageView fitHeight="254.0" fitWidth="168.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imag/federico-bottos-Z3NceSeZqgI-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="252.0" fitWidth="235.0" layoutY="-62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imag/federico-bottos-Z3NceSeZqgI-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutY="188.0" prefWidth="200.0" style="-fx-background-color: #232C27;" />
+      <Separator layoutX="168.0" layoutY="-25.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="16.0" style="-fx-background-color: #232C27;" />
+      <Label layoutX="188.0" layoutY="14.0" text="Студентська" textFill="#232c27">
+         <font>
+            <Font name="Roboto Light" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="175.0" layoutY="63.0" prefHeight="3.0" prefWidth="425.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="582.0" prefWidth="801.0" style="-fx-background-color: #284854; -fx-background-insets: 16;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddUserController">
+   <children>
+      <Label layoutX="259.0" layoutY="41.0" prefHeight="46.0" prefWidth="264.0" text="Створити користувача" textFill="#d9a774" wrapText="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="iTextField" layoutX="245.0" layoutY="168.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-radius: 10; -fx-background-color: b8b8aa;" />
+      <TextField fx:id="fTextField" layoutX="245.0" layoutY="112.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-radius: 10; -fx-background-color: b8b8aa;" />
+      <TextField fx:id="oTextField" layoutX="245.0" layoutY="226.0" prefHeight="25.0" prefWidth="313.0" promptText="необязательно" style="-fx-background-radius: 10; -fx-background-color: b8b8aa;" />
+      <Label layoutX="244.0" layoutY="88.0" prefHeight="21.0" prefWidth="286.0" text="Уведить прізвище" textFill="#d9a774">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font></Label>
+      <Label layoutX="245.0" layoutY="143.0" prefHeight="21.0" prefWidth="264.0" text="Введить ім'я" textFill="#d9a774">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font></Label>
+      <Label layoutX="245.0" layoutY="202.0" text="Введить по-батькові" textFill="#d9a774">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font></Label>
+      <Label layoutX="244.0" layoutY="260.0" prefHeight="21.0" prefWidth="322.0" text="Оберить дату народження" textFill="#d9a774">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font></Label>
+      <Label layoutX="245.0" layoutY="374.0" prefHeight="22.0" prefWidth="328.0" text="Майбутній користувач є:" textFill="#d9a774">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font></Label>
+      <DatePicker fx:id="birthdateDatePicker" layoutX="244.0" layoutY="286.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-color: b8b8aa;" />
+      <RadioButton fx:id="managerRadioButton" layoutX="244.0" layoutY="401.0" mnemonicParsing="false" text="Викладачем" textFill="#d9a774">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+         <font>
+            <Font name="Roboto Light" size="13.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="workerRadioButton" layoutX="416.0" layoutY="401.0" mnemonicParsing="false" text="Студентом" textFill="#d9a774" toggleGroup="$group">
+         <font>
+            <Font name="Roboto Light" size="13.0" />
+         </font></RadioButton>
+      <Button fx:id="confirmButton" layoutX="253.0" layoutY="509.0" mnemonicParsing="false" onAction="#addNewUser" prefHeight="46.0" prefWidth="294.0" style="-fx-background-color: b8b8aa; -fx-background-radius: 20;" text="Добавить пользователя" textAlignment="CENTER" textFill="#284854">
+         <font>
+            <Font name="Roboto Light" size="22.0" />
+         </font></Button>
+      <TextField fx:id="loginTextField" layoutX="245.0" layoutY="454.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-radius: 10; -fx-background-color: b8b8aa;" />
+      <Label layoutX="244.0" layoutY="427.0" text="Логін користувача" textFill="#d9a774">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font></Label>
+      <AnchorPane layoutY="-2.0" prefHeight="600.0" prefWidth="220.0" style="-fx-opacity: 10; -fx-border-color: FFFFFF; -fx-background-color: #232C27; -fx-background-insets: 8;">
+         <children>
+            <Button layoutX="65.0" layoutY="542.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="87.0" style="-fx-background-color: #60747C; -fx-background-radius: 20;" text="Вернуться" textFill="#d9a774">
+               <font>
+                  <Font name="Roboto Light" size="13.0" />
+               </font></Button>
+         </children></AnchorPane>
+      <AnchorPane layoutX="583.0" layoutY="-2.0" prefHeight="600.0" prefWidth="220.0" style="-fx-background-color: #232C27; -fx-background-insets: 8; -fx-border-color: ffffff;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #232c27; -fx-background-insets: 8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+    <children>
+        <Button layoutX="257.0" layoutY="504.0" mnemonicParsing="false" onAction="#login" prefHeight="44.0" prefWidth="262.0" style="-fx-background-color: #284854; -fx-border-radius: 200; -fx-background-radius: 200;" text="Війти" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="30.0" />
+         </font></Button>
+        <Label layoutX="221.0" layoutY="78.0" prefHeight="35.0" prefWidth="223.0" text="Введить логін" textFill="#60747c">
+         <font>
+            <Font name="Roboto Light" size="24.0" />
+         </font></Label>
+        <Label layoutX="221.0" layoutY="197.0" text="Введить пароль" textFill="#60747c">
+         <font>
+            <Font name="Roboto Light" size="24.0" />
+         </font></Label>
+        <TextField fx:id="loginTextField" layoutX="221.0" layoutY="137.0" prefHeight="35.0" prefWidth="334.0" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Roboto Thin" size="18.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordTextField" layoutX="221.0" layoutY="248.0" prefHeight="35.0" prefWidth="334.0" style="-fx-background-radius: 10;">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></PasswordField>
+      <ImageView fitHeight="535.0" fitWidth="803.0" layoutX="-1.0" layoutY="-2.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" scaleZ="0.0">
+         <image>
+            <Image url="@imag/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
